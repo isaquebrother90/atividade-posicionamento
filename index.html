@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Document</title>
+
+
+    <style>
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 35px;
+        }
+
+
+        #menu ul {
+            padding: 0px;
+            margin: 40px;
+            width: 988px;
+            height: 50px;
+            left: 100px;
+            background-color: #F0532A;
+            list-style: none;
+            left: 330px;
+
+
+        }
+
+        #menu li {
+            display: inline;
+            line-height: 50px;
+
+
+        }
+
+        #menu ul li a {
+            padding: 2px 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            left: 75px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+        }
+
+        header {
+
+            position: fixed;
+            width: 960px;
+            z-index: -1;
+
+        }
+
+        body {
+            background-image: url(/images/fundoprincipal.jpg);
+            position: absolute;
+
+        }
+
+        .produtos {
+            background-color: white;
+            width: 960px;
+            height: 100%;
+            position: fixed;
+            z-index: -2;
+            padding: 0px;
+            margin: 68px;
+            bottom: -220px;
+            
+        }
+
+        .produto1 {
+            background-image: url(/images/produto1.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            width: 300px;
+            height: 180px;
+            margin: 10px;
+            top: 10px;
+        }
+
+        .produto2 {
+            background-image: url(/images/produto2.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            width: 300px;
+            height: 180px;
+            margin: 10px;
+            top: 25px;
+        }
+
+        .produto3 {
+            background-image: url(/images/produto3.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            width: 300px;
+            height: 180px;
+            margin: 10px;
+            top: 40px;
+        }
+
+        .produto4 {
+            background-image: url(/images/produto4.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            left: 330px;
+            top: 20px;
+            display: flex;
+            box-sizing: border-box;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .produto5 {
+            background-image: url(/images/produto5.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            left: 330px;
+            top: 225px;
+        }
+
+        .produto6 {
+            background-image: url(/images/produto6.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            left: 330px;
+            top: 430px;
+        }
+
+        .produto7 {
+            background-image: url(/images/produto7.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            left: 650px;
+            top: 20px;
+        }
+
+        .produto8 {
+            background-image: url(/images/produto8.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            left: 650px;
+            top: 225px;
+        }
+
+        .produto9 {
+            background-image: url(/images/produto9.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            left: 650px;
+            top: 430px;
+        }
+
+        .freeproduto1 {
+            background-image: url(/images/etiquetafree.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+
+        }
+
+        .offproduto2 {
+            background-image: url(/images/etiquetaoff.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .freeproduto3 {
+            background-image: url(/images/etiquetafree.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .offproduto4 {
+            background-image: url(/images/etiquetaoff.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .newproduto5 {
+            background-image: url(/images/etiquetanew.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .offproduto6 {
+            background-image: url(/images/etiquetaoff.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .newproduto7 {
+            background-image: url(/images/etiquetanew.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .freeproduto8 {
+            background-image: url(/images/etiquetafree.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .newproduto9 {
+            background-image: url(/images/etiquetanew.png);
+            position: absolute;
+            width: 65px;
+            height: 60px;
+            left: 223px;
+            top: 0px;
+        }
+
+        .nomeproduto1 {
+            width: 300px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 18px;
+            vertical-align: center;
+            padding: 2px 0px;
+
+        }
+
+        p {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 4px;
+            letter-spacing: 1px;
+            vertical-align: 1px;
+            text-align: center;
+
+        }
+
+        .nomeproduto2 {
+            width: 300px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 18px;
+            vertical-align: center;
+            padding: 2px 0px;
+
+        }
+
+        p1 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -1px;
+            text-align: center;
+
+        }
+
+        .nomeproduto4 {
+            width: 300px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 18px;
+            vertical-align: center;
+            padding: 2px 0px;
+
+        }
+
+        p2 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: 1px;
+            text-align: center;
+
+        }
+
+        .nomeproduto5 {
+            width: 300px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 18px;
+            vertical-align: center;
+            padding: 2px 0px;
+
+        }
+
+        p3 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -1px;
+            text-align: center;
+
+        }
+
+        .nomeproduto7 {
+            width: 300px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 18px;
+            vertical-align: center;
+            padding: 2px 0px;
+
+        }
+
+        p4 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: 1px;
+            text-align: center;
+
+        }
+
+        .nomeproduto8 {
+            width: 300px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 18px;
+            vertical-align: center;
+            padding: 2px 0px;
+
+        }
+
+        p5 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: 1px;
+            text-align: center;
+
+        }
+
+        .vermais1 {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            left: 100px;
+            top: 123px;
+            vertical-align: center;
+            padding: 0px 0px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .botao01 {
+            text-decoration: none;
+            color: white;
+        }
+
+        p6 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -10px;
+            text-align: center;
+
+        }
+
+        .vermais2 {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            left: 100px;
+            top: 123px;
+            vertical-align: center;
+            padding: 0px 0px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .botao02 {
+            text-decoration: none;
+            color: white;
+        }
+
+        p7 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -10px;
+            text-align: center;
+
+        }
+
+        .vermais4 {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            left: 100px;
+            top: 123px;
+            vertical-align: center;
+            padding: 0px 0px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .botao04 {
+            text-decoration: none;
+            color: white;
+        }
+
+        p9 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -10px;
+            text-align: center;
+
+        }
+
+        .vermais5 {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            left: 100px;
+            top: 123px;
+            vertical-align: center;
+            padding: 0px 0px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .botao05 {
+            text-decoration: none;
+            color: white;
+        }
+
+        p10 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -10px;
+            text-align: center;
+
+        }
+
+        .vermais7 {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            left: 100px;
+            top: 123px;
+            vertical-align: center;
+            padding: 0px 0px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .botao07 {
+            text-decoration: none;
+            color: white;
+        }
+
+        p12 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -10px;
+            text-align: center;
+
+        }
+
+        .vermais8 {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            left: 100px;
+            top: 123px;
+            vertical-align: center;
+            padding: 0px 0px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .botao08 {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        p13 {
+            display: inline;
+            color: white;
+            font-family: sans-serif;
+            line-height: 0px;
+            letter-spacing: 1px;
+            vertical-align: -10px;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img class="logo" src="images/logocraftsy.png" alt="Logomarca" width="100" height="100">
+
+    <header>
+        <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Computadores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="produtos" id="principal">
+        <div class="produto1">
+
+            <div class="freeproduto1"></div>
+            <div class="nomeproduto1">
+                <p>Samsumg S4</p>
+            </div>
+            <div class="vermais1">
+                <p6><a href="#" class="botao01">VER MAIS</a></p6>
+            </div>
+
+        </div>
+
+        <div class="produto2">
+
+            <div class="offproduto2"></div>
+            <div class="nomeproduto2">
+                <p1>HTC 2020</p1>
+            </div>
+            <div class="vermais2">
+                <p7><a href="#" class="botao02">VER MAIS</a></p7>
+            </div>
+
+        </div>
+
+        <div class="produto3">
+
+            <div class="freeproduto3"></div>
+
+        </div>
+
+        <div class="produto4">
+
+            <div class="offproduto4"></div>
+            <div class="nomeproduto4">
+                <p2>Black Berry 2010</p2>
+            </div>
+            <div class="vermais4">
+                <p9><a href="#" class="botao04">VER MAIS</a></p9>
+            </div>
+
+        </div>
+
+        <div class="produto5">
+
+            <div class="newproduto5"></div>
+            <div class="nomeproduto5">
+                <p3>Xiaomi 10</p3>
+            </div>
+            <div class="vermais5">
+                <p10><a href="#" class="botao05">VER MAIS</a></p10>
+            </div>
+
+        </div>
+
+        <div class="produto6">
+
+            <div class="offproduto6"></div>
+
+        </div>
+
+        <div class="produto7">
+
+            <div class="newproduto7"></div>
+            <div class="nomeproduto7">
+                <p4>Samsumg S9</p4>
+            </div>
+            <div class="vermais7">
+                <p12><a href="#" class="botao07">VER MAIS</a></p12>
+            </div>
+
+        </div>
+
+        <div class="produto8">
+
+            <div class="freeproduto8"></div>
+            <div class="nomeproduto8">
+                <p5>Iphone 10</p5>
+            </div>
+            <div class="vermais8">
+                <p13><a href="#" class="botao08">VER MAIS</a></p13>
+
+            </div>
+
+        </div>
+
+        <div class="produto9">
+
+            <div class="newproduto9"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
